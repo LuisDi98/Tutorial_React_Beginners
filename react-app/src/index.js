@@ -1,9 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
 
-//JSX Hello World converts into a React.render thanks to Babel
-const element = <h1>Hello World</h1>;
-console.log(element);
-
-//This one moves the VirtualDOM into the Real DOM
-ReactDOM.render(element, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
