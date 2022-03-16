@@ -12,16 +12,20 @@ class Counters extends Component {
       { id: 4, value: 0},
     ],
   };
+
+    handleDelete = counterId => {
+        const countersFiltered = this.state.counters.filter(c => c.id !== counterId);
+        this.setState( { counters: countersFiltered } );
+    }
   render() {
-    
+    //Here on the prop counter we send all element data to the component, so it can manage it there
     return (
       <div>
         {this.state.counters.map((counter) => (
           <Counter
             key={counter.id}
-            value={counter.value}
-            selected={counter.selected}
-            id={counter.id}
+            onDelete={this.handleDelete}
+            counter={counter}
           />
         ))}
       </div>

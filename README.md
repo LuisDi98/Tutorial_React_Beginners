@@ -42,10 +42,11 @@ git mergetool                           //For graphical tool to resolve conflict
 
 //git commands all in one script
 git add .
-git commit -a -m "Props vs State theory on comments at Counters.jsx"
+git commit -a -m "Raising events and updating states"
 git push 
 
 git checkout dev
 git merge RB_11-props-vs-states
 git branch -d RB_11-props-vs-states
 git checkout -b RB_12-raising-hande-events
+npm run start
