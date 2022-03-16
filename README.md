@@ -42,11 +42,11 @@ git mergetool                           //For graphical tool to resolve conflict
 
 //git commands all in one script
 git add .
-git commit -a -m "Raising events and updating states"
+git commit -a -m "Single Source of Truth + Deleting Local State"
 git push 
 
 git checkout dev
-git merge RB_11-props-vs-states
-git branch -d RB_11-props-vs-states
-git checkout -b RB_12-raising-hande-events
+git merge RB_12-raising-hande-events
+git branch -d RB_12-raising-hande-events
+git checkout -b RB_13-single-source-of-truth
 npm run start
