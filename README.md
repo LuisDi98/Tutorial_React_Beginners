@@ -14,6 +14,11 @@ Set up steps:
 7- cd react-app 
 8- npm start
 
+If already have the repo files, then just:
+1- cd react-app
+2- npm i
+3- npm start
+
 For git commands:
 
 git status                              //Displays current branch and more important info
