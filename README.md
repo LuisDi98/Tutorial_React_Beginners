@@ -38,3 +38,14 @@ git merge RB_1-HelloWorld               //Branch to merge into base branch
 
 //BONUS:
 git mergetool                           //For graphical tool to resolve conflicts and merge branches.
+
+
+//git commands all in one script
+git add .
+git commit -a -m "Props vs State theory on comments at Counters.jsx"
+git push 
+
+git checkout dev
+git merge RB_11-props-vs-states
+git branch -d RB_11-props-vs-states
+git checkout -b RB_12-raising-hande-events
