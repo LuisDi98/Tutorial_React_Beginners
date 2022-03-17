@@ -42,11 +42,11 @@ git mergetool                           //For graphical tool to resolve conflict
 
 //git commands all in one script
 git add .
-git commit -a -m "Stateless Functional Component"
-git push --set-upstream origin RB_16-destructuring-args
+git commit -a -m "Lyfecycle Hooks"
+git push --set-upstream origin RB_17-lifecycle-hooks
 
 git checkout dev
-git merge RB_16-destructuring-args
-git branch -d RB_16-destructuring-args
+git merge RB_17-lifecycle-hooks
+git branch -d RB_17-lifecycle-hooks
 git checkout -b RB_17-lifecycle-hooks
 npm run start

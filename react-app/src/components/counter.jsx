@@ -1,10 +1,22 @@
 import React, { Component } from "react";
 
 class Counter extends Component {
-  
-    //as all the local state is being deleted, we no longer need the funcs or state here
+
+    componentDidUpdate(prevProps, prevState){
+        console.log("prevProps:", prevProps);
+        console.log("prevState:", prevState);
+        if(prevProps.counter.value !== this.props.counter.value){
+            console.log("Diff in", this.props.counter.id, "id Counter");
+        }
+    }
+
+    //When something is deleted
+    componentWillUnmount(){
+        console.log("Counter - Unmounted");
+    }
 
   render() {
+    console.log("Counter - Rendered");
     return (
       <div>
         <span className={this.getBadgeClasses()}> {this.formatCount()} </span>

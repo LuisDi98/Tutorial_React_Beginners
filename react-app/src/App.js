@@ -13,6 +13,18 @@ class App extends Component {
     ],
   };
 
+  //ideal for state assignment
+  constructor() {
+    super();
+    console.log("App - Constructor");
+  }
+
+  //Perfect place to make ajax call to fetch data from db
+  //Also this means when VirtualDom fro render is mounted to Real Dom
+  componentDidMount() {
+    console.log("App - Mounted");
+  }
+
   handleDelete = (counterId) => {
     const countersFiltered = this.state.counters.filter(
       (c) => c.id !== counterId
@@ -36,7 +48,9 @@ class App extends Component {
     this.setState({ counters });
   };
 
+  //Virtual dom is defined here
   render() {
+    console.log("App - rendered");
     return (
       <React.Fragment>
         <NavBar
