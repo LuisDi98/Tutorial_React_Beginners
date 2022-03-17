@@ -43,10 +43,10 @@ git mergetool                           //For graphical tool to resolve conflict
 //git commands all in one script
 git add .
 git commit -a -m "Stateless Functional Component"
-git push 
+git push --set-upstream origin RB_16-destructuring-args
 
 git checkout dev
-git merge RB_15-stateless-functional-components
-git branch -d RB_15-stateless-functional-components
-git checkout -b RB_16-destructuring-args
+git merge RB_16-destructuring-args
+git branch -d RB_16-destructuring-args
+git checkout -b RB_17-lifecycle-hooks
 npm run start
