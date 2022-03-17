@@ -42,11 +42,11 @@ git mergetool                           //For graphical tool to resolve conflict
 
 //git commands all in one script
 git add .
-git commit -a -m "Single Source of Truth + Deleting Local State"
+git commit -a -m "Multiple Components in Sync"
 git push 
 
 git checkout dev
-git merge RB_12-raising-hande-events
-git branch -d RB_12-raising-hande-events
-git checkout -b RB_13-single-source-of-truth
+git merge RB_13-single-source-of-truth
+git branch -d RB_13-single-source-of-truth
+git checkout -b RB_14-multiple-components-sync
 npm run start
