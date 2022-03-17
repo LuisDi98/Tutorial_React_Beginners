@@ -42,11 +42,11 @@ git mergetool                           //For graphical tool to resolve conflict
 
 //git commands all in one script
 git add .
-git commit -a -m "Multiple Components in Sync"
+git commit -a -m "Stateless Functional Component"
 git push 
 
 git checkout dev
-git merge RB_13-single-source-of-truth
-git branch -d RB_13-single-source-of-truth
-git checkout -b RB_14-multiple-components-sync
+git merge RB_15-stateless-functional-components
+git branch -d RB_15-stateless-functional-components
+git checkout -b RB_16-destructuring-args
 npm run start
