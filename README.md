@@ -14,6 +14,11 @@ Set up steps:
 7- cd react-app 
 8- npm start
 
+If already have the repo files, then just:
+1- cd react-app
+2- npm i
+3- npm start
+
 For git commands:
 
 git status                              //Displays current branch and more important info
@@ -33,3 +38,15 @@ git merge RB_1-HelloWorld               //Branch to merge into base branch
 
 //BONUS:
 git mergetool                           //For graphical tool to resolve conflicts and merge branches.
+
+
+//git commands all in one script
+git add .
+git commit -a -m "General fixes in conflicts"
+git push --set-upstream origin RB_17-lifecycle-hooks
+
+git checkout dev
+git merge RB_17-lifecycle-hooks
+git branch -d RB_17-lifecycle-hooks
+git checkout -b RB_17-lifecycle-hooks
+npm run start
