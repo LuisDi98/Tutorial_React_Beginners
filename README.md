@@ -5,6 +5,7 @@ React is a Javascript framework for user interfaces.
 React reacts to state changes.
 
 Set up steps:
+
 1- Install NodeJS
 2- npm uninstall create-react-app 
 3- npm uninstall -g create-react-app 
@@ -15,6 +16,7 @@ Set up steps:
 8- npm start
 
 If already have the repo files, then just:
+
 1- cd react-app
 2- npm i
 3- npm start
@@ -24,6 +26,7 @@ For git commands:
 git status                              //Displays current branch and more important info
 
 Commits and pushes:
+
 git commit -a -m 'React Template + Index.js HelloWorld + comments'
 git push origin
 
